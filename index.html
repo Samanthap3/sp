@@ -3,166 +3,178 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Samantha Pan — Portfolio</title>
+<title>Samantha Pan — Engineering Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=DM+Sans:wght@400;500;700&family=Caveat:wght@500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="mode-switch">
-  <button class="creator-btn active" onclick="setMode('creator')">Creator</button>
-  <button class="eng-btn" onclick="setMode('engineering')">Engineering</button>
-</div>
+
 
 <!-- ============ CREATOR VIEW ============ -->
-<div id="view-creator">
+<div id="view-creator" style="display:none;">
 
   <nav>
     <div class="wrap">
-      <div class="brand">sammy ✿</div>
+      <div class="brand">Samantha ✿</div>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#platforms">Platforms</a></li>
         <li><a href="#pillars">Content</a></li>
-        <li><a href="#partners">Partners</a></li>
-        <li><a href="#featured">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#partners">Brands</a></li>
       </ul>
+      <div class="mode-switch">
+        <button class="eng-btn active" onclick="setMode('engineering')">Engineering</button>
+        <button class="creator-btn" onclick="setMode('creator')">Creator</button>
+      </div>
     </div>
   </nav>
 
   <header class="hero wrap">
     <div class="hero-grid">
       <div>
-        <span class="note">hi, so glad you're here —</span>
-        <h1>Sammy Pan</h1>
-        <p class="tagline">Matcha runs, food finds, and the quiet parts of an ordinary week, told across Instagram, TikTok, and YouTube. Currently balancing an engineering degree with a camera roll full of oat-milk foam art.</p>
-        <div class="handles">
-          <span class="handle-chip">IG @samamypan</span>
-          <span class="handle-chip">TikTok @sammamyp</span>
-          <span class="handle-chip">YouTube @sammamyp</span>
+        <span class="note">Welcome to my page —</span>
+        <h1>Samantha Pan</h1>
+        <p class="tagline">Matcha enthusiast, foodie, designer, and engineer</p>
+        <div class="social-icons">
+          <a class="social-icon" href="https://instagram.com/samamypan" target="_blank" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a class="social-icon" href="https://www.tiktok.com/@sammamyp" target="_blank" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 2h-3.2v13.6c0 1.5-1.2 2.7-2.7 2.7s-2.7-1.2-2.7-2.7 1.2-2.7 2.7-2.7c.3 0 .6 0 .8.1V9.7c-.3 0-.5-.1-.8-.1-3.2 0-5.9 2.6-5.9 5.9S8.4 21.4 11.6 21.4s5.9-2.6 5.9-5.9V8.4c1.2 1 2.7 1.6 4.4 1.6V6.8c-2.7 0-4.9-2.1-5-4.8z"></path></svg>
+          </a>
+          <a class="social-icon" href="https://www.youtube.com/@sammamypan" target="_blank" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+          </a>
         </div>
       </div>
       <div class="stack">
-        <div class="card c1"><span>day in my life</span></div>
-        <div class="card c2"><span>matcha runs</span></div>
-        <div class="card c3"><span>food recs</span></div>
+        <div class="card c1"><img src="assets/chicago.JPG" alt="Day in my life"><span>day in my life</span></div>
+        <div class="card c2"><img src="assets/mematcha.jpeg" alt="Matcha run"><span>matcha runs</span></div>
+        <div class="card c3"><img src="assets/chodanggol.jpeg" alt="Food recs"><span>food recs</span></div>
       </div>
     </div>
   </header>
 
   <section id="about">
-    <div class="wrap about-grid">
+    <div class="wrap about-grid reveal">
       <div>
         <div class="section-head"><h2>About</h2></div>
-        <p>I'm Sammy — an engineering student by day and a lifestyle creator in every other spare hour. My content lives in the small, specific moments: the best matcha spot in a five-mile radius, the noodle bowl worth the wait, the unglamorous truth of a day in my life between problem sets and content shoots.</p>
-        <p>I care about making things that feel honest before they feel polished. My audience comes back for the recs, but they stay for the person behind them.</p>
+        <p>I'm Samantha, an engineering student with a creative outlet to share the things I love. I started social media my freshman year of college to document my 4 years at UIUC. I found a place to share my love for matcha, food, and anything cute and fun. I am not afraid to give my honest reviews. It has also been an opportunity to put myself out there and be spontaneous.</p>
       </div>
-      <div class="pull">"Aesthetic is the hook. Honesty is why people stay."</div>
+      <div class="pull-photo"><img src="assets/me-cutout.png" alt="Samantha Pan"></div>
     </div>
   </section>
 
   <section id="platforms">
-    <div class="wrap">
-      <div class="section-head"><h2>Where to find me</h2><p>3K+ followers across Instagram, TikTok, and YouTube.</p></div>
-      <div class="platform-grid">
-        <div class="platform stat-only">
-          <h3>Instagram</h3>
-          <div class="handle">@samamypan</div>
-          <div class="stat-number">3K<span>combined followers</span></div>
-        </div>
-        <div class="platform stat-only">
-          <h3>TikTok</h3>
-          <div class="handle">@sammamyp</div>
-          <div class="stat-number">3K<span>combined followers</span></div>
-        </div>
-        <div class="platform stat-only">
-          <h3>YouTube</h3>
-          <div class="handle">@sammamyp</div>
-          <div class="stat-number">3K<span>combined followers</span></div>
-        </div>
+    <div class="wrap reveal">
+      <div class="single-stat">
+        <div class="stat-number">3K+<span>across all platforms</span></div>
       </div>
     </div>
   </section>
 
   <section id="pillars">
-    <div class="wrap">
-      <div class="section-head"><h2>What I make</h2><p>Three recurring threads that hold the page together.</p></div>
+    <div class="wrap reveal">
+      <div class="section-head"><h2>My content</h2><p>These are the recurring themes in my content.</p></div>
       <div class="pillar-row">
-        <div class="pillar"><div class="mark"></div><h3>Matcha adventures</h3><p>Reviewing cafes and comparing whisk-to-cup ratios, one iced matcha at a time.</p></div>
-        <div class="pillar"><div class="mark"></div><h3>Food recs</h3><p>The dishes, restaurants, and hole-in-the-wall spots actually worth a trip.</p></div>
-        <div class="pillar"><div class="mark"></div><h3>Day in my life</h3><p>Engineering lectures, content shoots, and everything unglamorous in between.</p></div>
+        <div class="pillar"><div class="mark"><img src="assets/matcha1.JPG" alt=""></div><h3>Matcha adventures</h3><p>On my journey to try every matcha spot.</p></div>
+        <div class="pillar"><div class="mark"><img src="assets/matcha3.JPG" alt=""></div><h3>Food recs</h3><p>I am always down to grab a bite, and you know I will be reviewing it on my beli.</p></div>
+        <div class="pillar"><div class="mark"><img src="assets/matcha2.JPG" alt=""></div><h3>Daily vlogs</h3><p>Documenting the fun and realistic day to days.</p></div>
       </div>
     </div>
   </section>
 
   <section id="partners">
-    <div class="wrap">
-      <div class="section-head"><h2>Partnerships</h2><p>Brands I've represented and worked with directly.</p></div>
+    <div class="wrap reveal">
+      <div class="section-head"><h2>Brand Partnerships</h2><p>Brands I have created content for with my affilate links attached.</p></div>
       <div class="partner-block">
-        <div class="partner-label">Brand Ambassador</div>
-        <div class="chips"><span class="chip">Princess Polly</span><span class="chip">Owala</span><span class="chip">Partiful</span></div>
+        <div class="sticker-collage">
+          <a class="logo-sticker t1" href="https://get.aspr.app/SH1yYy" target="_blank"><img src="assets/brands/princesspolly.jpg" alt="Princess Polly"></a>
+          <a class="logo-sticker t2" href="https://owalalife.com/SAMANTHAPAN" target="_blank"><img src="assets/brands/owala.jpeg" alt="Owala"></a>
+          <a class="logo-sticker t3" href="https://m.partiful.com/4Mp1SJB3T5b" target="_blank"><img src="assets/brands/partiful.png" alt="Partiful"></a>
+        </div>
       </div>
       <div class="partner-block">
-        <div class="partner-label">Brand Collaborations</div>
-        <div class="chips"><span class="chip alt">Lewkin</span><span class="chip alt">FKRO Matcha</span><span class="chip alt">Uber Eats</span></div>
+        <div class="sticker-collage">
+          <a class="logo-sticker t2" href="https://lewkin.com/SAMMAMYP" target="_blank"><img src="assets/brands/lewkin.jpg" alt="Lewkin"></a>
+          <span class="logo-sticker t1"><img src="assets/brands/fkro.jpeg" alt="FKRO Matcha"></span>
+          <span class="logo-sticker t3"><img src="assets/brands/uber.png" alt="Uber Eats"></span>
+        </div>
       </div>
     </div>
   </section>
 
   <section id="featured">
-    <div class="wrap">
+    <div class="wrap reveal">
       <div class="section-head"><h2>Featured content</h2><p>Swap these placeholders for your actual posts, thumbnails, and stats.</p></div>
       <div class="featured-grid">
-        <div class="polaroid r1"><div class="photo real"><img src="assets/fkro.png" alt="FKRO Matcha collab"></div><div class="cap">Instagram Story · FKRO Matcha collab</div></div>
-        <div class="polaroid r2"><div class="photo real"><img src="assets/owala.png" alt="Owala ambassador content"></div><div class="cap">Instagram Story · Owala ambassador</div></div>
-        <div class="polaroid r3"><div class="photo real"><img src="assets/uber.png" alt="Uber Eats campus gameday activation"></div><div class="cap">Instagram Story · Uber Eats collab</div></div>
-        <div class="polaroid r2"><div class="photo ph-a">GRWM: campus to coffee run</div><div class="cap">TikTok · [add views]</div></div>
-        <div class="polaroid r1"><div class="photo ph-b">Day in my life: finals week</div><div class="cap">YouTube · [add view count]</div></div>
-        <div class="polaroid r3"><div class="photo ph-c">Weekend food recs</div><div class="cap">Instagram Carousel · [add likes]</div></div>
+        <div class="polaroid"><div class="photo real"><img src="assets/fkro.png" alt="FKRO Matcha collab"></div><div class="cap">Instagram Story · FKRO Matcha collab</div></div>
+        <div class="polaroid"><div class="photo real"><img src="assets/owala.png" alt="Owala ambassador content"></div><div class="cap">Instagram Story · Owala ambassador</div></div>
+        <div class="polaroid"><div class="photo real"><img src="assets/uber.png" alt="Uber Eats campus gameday activation"></div><div class="cap">Instagram Story · Uber Eats collab</div></div>
+        <div class="polaroid tiktok-card">
+          <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@sammamyp/photo/7676862459302399262" data-video-id="7676862459302399262" style="max-width: 325px;min-width: 280px;"><section></section></blockquote>
+        </div>
+        <div class="polaroid tiktok-card">
+          <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@sammamyp/video/7544768035131903262" data-video-id="7544768035131903262" style="max-width: 325px;min-width: 280px;"><section></section></blockquote>
+        </div>
+        <div class="polaroid tiktok-card">
+          <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@sammamyp/video/7523974045709159711" data-video-id="7523974045709159711" style="max-width: 325px;min-width: 280px;"><section></section></blockquote>
+        </div>
       </div>
     </div>
   </section>
 
   <section id="contact">
-    <div class="wrap">
-      <h2>Let's work together</h2>
-      <a class="cta-btn" href="mailto:sammamyp@gmail.com">Email sammamyp@gmail.com</a>
-      <div class="contact-handles">
-        <span>IG @samamypan</span><span>TikTok @sammamyp</span><span>YouTube @sammamyp</span>
+    <div class="wrap reveal">
+      <h2>Let's Connect!</h2>
+      <a class="cta-btn" href="mailto:sammamyp@gmail.com">samanthapan06@gmail.com</a>
+      <div class="social-icons">
+        <a class="social-icon" href="https://instagram.com/samamypan" target="_blank" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        </a>
+        <a class="social-icon" href="https://www.tiktok.com/@sammamyp" target="_blank" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 2h-3.2v13.6c0 1.5-1.2 2.7-2.7 2.7s-2.7-1.2-2.7-2.7 1.2-2.7 2.7-2.7c.3 0 .6 0 .8.1V9.7c-.3 0-.5-.1-.8-.1-3.2 0-5.9 2.6-5.9 5.9S8.4 21.4 11.6 21.4s5.9-2.6 5.9-5.9V8.4c1.2 1 2.7 1.6 4.4 1.6V6.8c-2.7 0-4.9-2.1-5-4.8z"></path></svg>
+        </a>
+        <a class="social-icon" href="https://www.youtube.com/@sammamypan" target="_blank" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+        </a>
       </div>
     </div>
   </section>
 
-  <footer>Sammy Pan · Content Creator Portfolio</footer>
+  <footer>Samantha Pan · Content Creator Portfolio</footer>
 </div>
 
 <!-- ============ ENGINEERING VIEW ============ -->
-<div id="view-engineering" style="display:none;">
+<div id="view-engineering">
 
   <nav>
     <div class="wrap">
-      <div class="brand mono">S. PAN — ME</div>
+      <div class="brand mono">Samantha ✿</div>
       <ul>
-        <li><a href="#eng-skills">Skills</a></li>
         <li><a href="#eng-projects">Projects</a></li>
         <li><a href="#eng-research">Research</a></li>
         <li><a href="#eng-experience">Experience</a></li>
-        <li><a href="#eng-achievements">Achievements</a></li>
-        <li><a href="#eng-contact">Contact</a></li>
+        <li><a href="#eng-leadership">Leadership</a></li>
+        <li><a href="#eng-skills">Skills</a></li>
+        <li><a href="#eng-achievements">Certifications</a></li>
       </ul>
+      <div class="mode-switch">
+        <button class="eng-btn active" onclick="setMode('engineering')">Engineering</button>
+        <button class="creator-btn" onclick="setMode('creator')">Creator</button>
+      </div>
     </div>
   </nav>
 
   <header class="hero wrap">
     <div class="eng-hero-grid">
       <div>
-        <span class="eng-tag">MECHANICAL ENGINEERING / MINOR IN CS</span>
         <h1>Samantha Pan</h1>
-        <p class="tagline">I design, prototype, and build — from CAD models to code. Currently studying Mechanical Engineering at UIUC, with hands-on work spanning robotics, sustainable product design, and full-stack software.</p>
+        <p class="tagline">I design, prototype, and build — from CAD models to code. Currently a Junior at the UIUC studying Mechanical Engineering, with an interest in robotics, design, and product management. I have gained experiences working with both hardware and software development, as well as conducting research in human AI interaction in makerspaces and human centered design.</p>
         <div class="eng-links">
-          <a class="eng-btn solid" href="Samantha_Pan_Resume.pdf" target="_blank">Download Resume</a>
+          <a class="eng-btn solid" href="assets/resume.pdf" target="_blank">Download Resume</a>
           <a class="eng-btn" href="https://www.linkedin.com/in/samanthap6" target="_blank">LinkedIn</a>
           <a class="eng-btn" href="mailto:samanthapan06@gmail.com">Email</a>
         </div>
@@ -175,8 +187,160 @@
     </div>
   </header>
 
+  <section id="eng-projects">
+    <div class="wrap reveal">
+      <div class="section-head">
+        <h2>Projects</h2>
+      </div>
+      <div class="eng-projects">
+        <div class="proj-card">
+          <div class="proj-photo grad-1" style="padding:0;">
+            <img src="assets/roboarm.png" alt="Assembled Arduino robot arm" style="width:100%;">
+          </div>
+          <div class="proj-body">
+            <div class="date">MAY 2026</div>
+            <h3>Arduino Robot Arm</h3>
+            <ul>
+              <li>Built a 5-DOF robotic arm from an open-source mechanical design, 3D-printing all structural components</li>
+              <li>Isolated a 5V/2A+ external supply for the 6 servo motors from Arduino's logic circuit to safely handle high current draw</li>
+              <li>Programmed all six servos via PlatformIO with custom speed-controlled interpolation for smooth, non-jerky motion</li>
+            </ul>
+          </div>
+        </div>
+        <div class="proj-card">
+          <div class="proj-photo" style="padding:0;display:flex;">
+            <img src="assets/shelfPrint.png" alt="3D-printed zigzag display shelf, angle 1" style="width:50%; background:#1a1a1a;">
+            <img src="assets/stairCAD.png" alt="Zigzag shelf CAD model" style="width:50%;background:#1a1a1a;">
+          </div>
+          <div class="proj-body">
+            <div class="date">JUNE 2025</div>
+            <h3>Smiski Shelf</h3>
+            <ul>
+              <li>Designed and 3D-printed a modular zigzag shelf unit for displaying my smiski collection</li>
+              <li>Deminsioned slotted rails, stair length, and base for clean fit in assembly</li>
+              <li>Iterated on print orientation and infill to balance strength and print time</li>
+            </ul>
+          </div>
+        </div>
+        <div class="proj-card">
+          <div class="proj-photo grad-2" style="padding:0;">
+            <img src="assets/planter.png" alt="Self-watering planter CAD render" style="width:100%;">
+          </div>
+          <div class="proj-body">
+            <div class="date">MAY 2025</div>
+            <h3>Sustainability Redesign: Self-Watering Planter</h3>
+            <ul>
+              <li>Repurposed a water bottle into a self-watering planter, prototyped in Autodesk Fusion CAD</li>
+              <li>Evaluated 8+ design concepts with a Pugh Matrix for functionality, originality, and sustainability</li>
+              <li>Created detailed engineering drawings using GD&T</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="eng-research">
+    <div class="wrap reveal">
+      <div class="section-head">
+        <span class="eng-tag">RESEARCH</span>
+        <h2>Human-AI Interaction</h2>
+        <p>Undergraduate researcher at UIUC's Hands-On Intelligence Lab, studying how people co-create with AI tools during hands-on making.</p>
+      </div>
+      <div class="eng-hero-grid" style="align-items:start;">
+        <div class="spec-card">
+          <div class="label">PILOT STUDY</div>
+          <h3>Human–AI Interactions in Craftwork Environments</h3>
+          <p style="margin-top:10px;"><strong style="color:var(--navy);">Workshop:</strong> A design-based research study using a 2-hour e-textile patch workshop to observe how 10-15 participants of varying skill levels co-create with AI tools and what happens to creativity, decision-making, and confidence in the makerprocess.</p>
+          <p style="margin-top:14px;"><strong style="color:var(--navy);">Role:</strong> Research Assistant under Professor Kyungwon Koh and Professor Christine Marcelino, helping shape research methodology, questions, and target subjects, and co-organized the workshop with a 7-person research team.</p>
+          <p style="margin-top:14px;"><strong style="color:var(--navy);">Early insights:</strong> AI functions as a supportive collaborator rather than a replacement, participants often turn to peers over AI in maker settings, and visual demonstration outpaces chat-based guidance for learning.</p>
+          <p style="margin-top:14px;"><strong style="color:var(--navy);">Next Steps:</strong> I am continuing this reaserch by focusing on where AI benefits makers most in the design process and using human centered design to create a way for makers to communicate with ai through the physical creation process rather than words.</p>
+          <a class="rg-item" href="assets/poster.pdf" target="_blank">
+            <img src="assets/poster.png" alt="Human-AI Interactions in Craftwork Environments research poster">
+            <span>Full research poster — click to expand</span>
+          </a>
+        </div>
+        <div class="workshop-stack">
+          <div class="rg-item"><img src="assets/ideation.png" alt="Concept sketched from brainstorm"><span>Participant Ideation Drawing</span></div>
+          <div class="rg-item"><img src="assets/workshop.png" alt="Workshop participants building e-textile crafts"><span>Workshop in Progress</span></div>
+          <div class="rg-item"><img src="assets/product.png" alt="etextile final product"><span>Participant Completed E-textile</span></div>          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="eng-experience">
+    <div class="wrap reveal">
+      <div class="section-head">
+        <span class="eng-tag">WORK HISTORY</span>
+        <h2>Experience</h2>
+      </div>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="date">JUN 2026 – AUG 2026</div>
+          <h3>Product Automation Intern</h3>
+          <div class="org">Simple Fractal · Remote</div>
+          <p class="blurb">Designed wireframes for 5 automation bots, built an automated task-creation pipeline connecting Gmail, Google Meet, and Asana with Claude, and shipped 10+ pull requests for UX and ETL improvements.</p>
+        </div>
+        <div class="tl-item">
+          <div class="date">FEB 2026 – PRESENT</div>
+          <h3>Ignite Fellow</h3>
+          <div class="org">Teach For America · Remote</div>
+          <p class="blurb">Designed and delivered lesson plans 4 days/week for 4th-grade students covering reading, spelling, and phonics, using active-learning strategies to boost engagement in a virtual classroom.</p>
+        </div>
+        <div class="tl-item">
+          <div class="date">JAN 2026 – PRESENT</div>
+          <h3>Research Assistant</h3>
+          <div class="org">Hands-On Intelligence Lab, Prof. Kyungwon Koh · Champaign, IL</div>
+          <p class="blurb">Study human-AI interaction; helped organize a 10-person workshop analyzing AI integration in craftwork environments.</p>
+        </div>
+        <div class="tl-item">
+          <div class="date">OCT 2025 – MAR 2026</div>
+          <h3>AI Trainer</h3>
+          <div class="org">Handshake AI Fellowship · Remote</div>
+          <p class="blurb">Developed and evaluated 20+ domain-specific prompts to assess LLM performance in multimodal AI evaluation, analyzing 30+ outputs for scientific accuracy, clarity, and depth.</p>
+        </div>
+        <div class="tl-item">
+          <div class="date">NOV 2024 – MAY 2025</div>
+          <h3>Maker Lab Assistant</h3>
+          <div class="org">Jackson Innovation Studio · Champaign, IL</div>
+          <p class="blurb">Managed inventory for 50+ precision tools and worked with 75+ students to optimize 3D print designs, improving average print time by 20%.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="eng-leadership">
+    <div class="wrap reveal">
+      <div class="section-head">
+        <span class="eng-tag">INVOLVEMENT</span>
+        <h2>Leadership</h2>
+      </div>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="date">MAY 2026 – PRESENT</div>
+          <h3>Publicity Director</h3>
+          <div class="org">Women in Mechanical Science and Engineering · Champaign, IL</div>
+          <p class="blurb">Manage 4+ platforms to timely communicate upcoming events to WiM members and design 20+ graphics for the WiM Instagram and weekly newsletter </p>
+        </div>
+        <div class="tl-item">
+          <div class="date">MAY 2025 – MAY 2026</div>
+          <h3>Social Director</h3>
+          <div class="org">Women in Mechanical Science and Engineering · Champaign, IL</div>
+          <p class="blurb">Plan monthly social events for 30 members and manage venue-booking communications; organize a $600 budget spreadsheet with the treasurer to allocate funds across the year's events.</p>
+        </div>
+        <div class="tl-item">
+          <div class="date">JAN 2025 – MAY 2026</div>
+          <h3>Tech Lead</h3>
+          <div class="org">Sunday Coding Studio · Champaign, IL</div>
+          <p class="blurb">Lead a year-long Python and Arduino workshop for 15 middle schoolers, tracking milestones for 5 capstone teams and individually mentoring beginners — lifting re-enrollment by 20%.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="eng-skills">
-    <div class="wrap">
+    <div class="wrap reveal">
       <div class="section-head">
         <span class="eng-tag">CAPABILITIES</span>
         <h2>Skills</h2>
@@ -210,160 +374,36 @@
     </div>
   </section>
 
-  <section id="eng-projects">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="eng-tag">SELECTED WORK</span>
-        <h2>Projects</h2>
-      </div>
-      <div class="eng-projects">
-        <div class="proj-card">
-          <div class="proj-photo" style="padding:0;display:flex;">
-            <img src="assets/shelfPrint.png" alt="3D-printed zigzag display shelf, angle 1" style="width:33.33%;height:100%;object-fit:cover;">
-            <img src="assets/stairCAD.png" alt="Zigzag shelf CAD model" style="width:33.34%;height:100%;object-fit:cover;background:#1a1a1a;">
-          </div>
-          <div class="proj-body">
-            <div class="date">PERSONAL PROJECT</div>
-            <h3>Zigzag Display Shelf</h3>
-            <ul>
-              <li>Designed and 3D-printed a modular zigzag shelf unit for displaying a figurine collection</li>
-              <li>Engineered interlocking slotted rails for structural stability without hardware</li>
-              <li>Iterated on print orientation and infill to balance strength and print time</li>
-            </ul>
-          </div>
-        </div>
-        <div class="proj-card">
-          <div class="proj-photo grad-1" style="padding:0;">
-            <img src="assets/roboarm.png" alt="Assembled Arduino robot arm" style="width:100%;height:100%;object-fit:cover;">
-          </div>
-          <div class="proj-body">
-            <div class="date">MAY 2026</div>
-            <h3>Arduino Robot Arm</h3>
-            <ul>
-              <li>Built a 5-DOF robotic arm from an open-source mechanical design, 3D-printing all structural components</li>
-              <li>Isolated a 5V/2A+ external supply for the 6 servo motors from Arduino's logic circuit to safely handle high current draw</li>
-              <li>Programmed all six servos via PlatformIO with custom speed-controlled interpolation for smooth, non-jerky motion</li>
-            </ul>
-          </div>
-        </div>
-        <div class="proj-card">
-          <div class="proj-photo grad-2" style="padding:0;">
-            <img src="assets/planter.png" alt="Self-watering planter CAD render" style="width:100%;height:100%;object-fit:cover;">
-          </div>
-          <div class="proj-body">
-            <div class="date">MAY 2025</div>
-            <h3>Sustainability Redesign: Self-Watering Planter</h3>
-            <ul>
-              <li>Repurposed a water bottle into a self-watering planter, prototyped in Autodesk Fusion CAD</li>
-              <li>Evaluated 8+ design concepts with a Pugh Matrix for functionality, originality, and sustainability</li>
-              <li>Created detailed engineering drawings using GD&T</li>
-            </ul>
-          </div>
-        </div>
-        <div class="proj-card">
-          <div class="proj-photo" style="padding:0;display:flex;">
-            <img src="assets/bottleHolderInitialDesign.png" alt="Expandable water bottle holder CAD render" style="width:33.33%;height:100%;object-fit:cover;background:#fff;">
-            <img src="assets/bottleHolder.png" alt="Cup holder cross-section engineering drawing" style="width:33.34%;height:100%;object-fit:cover;background:#fff;">
-          </div>
-          <div class="proj-body">
-            <div class="date">GROUP PROJECT</div>
-            <h3>Expandable Water Bottle Holder</h3>
-            <ul>
-              <li>Designed an expandable holder with charm attachments, a release button, and swappable absorbent inserts</li>
-              <li>Modeled the assembly in Autodesk Fusion CAD from concept sketch through final render</li>
-              <li>Produced a full cross-section assembly drawing with GD&T callouts for manufacturing</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="eng-research">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="eng-tag">RESEARCH</span>
-        <h2>Human-AI Interaction in Craftwork</h2>
-        <p>Research assistantship at UIUC's Hands-On Intelligence Lab, studying how people co-create with AI tools during hands-on making.</p>
-      </div>
-      <div class="eng-hero-grid" style="align-items:start;">
-        <div class="spec-card">
-          <div class="label">PILOT STUDY</div>
-          <h3>Human–AI Interactions in Craftwork Environments</h3>
-          <p style="margin-top:10px;">A design-based research study using a 2-hour e-textile patch workshop to observe how 10-15 participants of varying skill levels co-create with AI tools — and what happens to creativity, decision-making, and confidence in the process.</p>
-          <p style="margin-top:14px;"><strong style="color:var(--navy);">Role:</strong> Research Assistant under Prof. Kyungwon Koh — helped shape research methodology, questions, and target subjects, and co-organized the workshop with a 7-person research team.</p>
-          <p style="margin-top:14px;"><strong style="color:var(--navy);">Early insights:</strong> AI tends to function as a supportive collaborator rather than a replacement, participants often turn to peers over AI in maker settings, and visual demonstration outpaces chat-based guidance for learning.</p>
-          <div class="eng-links" style="margin-top:18px;">
-            <a class="eng-btn" href="assets/research-poster.pdf" target="_blank">View full poster (PDF)</a>
-          </div>
-        </div>
-        <a href="assets/poster.png" target="_blank" style="display:block;">
-          <img src="assets/poster.png" alt="Human-AI Interactions in Craftwork Environments research poster" style="width:100%;border-radius:6px;border:1px solid var(--blueprint-line);box-shadow:0 10px 22px rgba(31,42,56,0.1);">
-        </a>
-      </div>
-      <div class="research-gallery">
-        <div class="rg-item"><img src="assets/ideation.png" alt="Concept sketched from brainstorm"><span>Participant Ideation Drawing</span></div>
-        <div class="rg-item"><img src="assets/product.png" alt="etextile final product"><span>Participant Completed E-textile</span></div>
-        <div class="rg-item"><img src="assets/workshop.png" alt="Workshop participants building e-textile crafts"><span>Workshop in progress</span></div>
-        <div class="rg-item"><img src="assets/jellyfish-sketches.jpg" alt="Participant concept sketches for e-textile jellyfish"><span>Participant sketches</span></div>
-        <div class="rg-item"><img src="assets/jellyfish-finished.jpg" alt="Finished LED e-textile jellyfish craft"><span>Finished e-textile craft</span></div>
-        <div class="rg-item"><img src="assets/bat-plush.jpg" alt="Finished LED e-textile bat craft"><span>Finished e-textile craft</span></div>
-        <div class="rg-item"><img src="assets/presenter.jpg" alt="Researcher demonstrating a craft technique"><span>Facilitator demo</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="eng-experience">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="eng-tag">WORK HISTORY</span>
-        <h2>Experience</h2>
-      </div>
-      <div class="timeline">
-        <div class="tl-item">
-          <div class="date">JUN 2026 – AUG 2026</div>
-          <h3>Product Automation Intern</h3>
-          <div class="org">Simple Fractal · Remote</div>
-          <p class="blurb">Designed wireframes for 5 automation bots, built an automated task-creation pipeline connecting Gmail, Google Meet, and Asana with Claude, and shipped 10+ pull requests for UX and ETL improvements.</p>
-        </div>
-        <div class="tl-item">
-          <div class="date">JAN 2026 – PRESENT</div>
-          <h3>Research Assistant</h3>
-          <div class="org">Hands-On Intelligence Lab, Prof. Kyungwon Koh · Champaign, IL</div>
-          <p class="blurb">Study human-AI interaction; helped organize a 10-person workshop analyzing AI integration in craftwork environments.</p>
-        </div>
-        <div class="tl-item">
-          <div class="date">NOV 2024 – MAY 2025</div>
-          <h3>Maker Lab Assistant</h3>
-          <div class="org">Jackson Innovation Studio · Champaign, IL</div>
-          <p class="blurb">Managed inventory for 50+ precision tools and worked with 75+ students to optimize 3D print designs, improving average print time by 20%.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section id="eng-achievements">
-    <div class="wrap">
+    <div class="wrap reveal">
       <div class="section-head">
-        <span class="eng-tag">RECOGNITION</span>
-        <h2>Achievements</h2>
+        <span class="eng-tag">CREDENTIALS</span>
+        <h2>Certifications</h2>
       </div>
       <div class="achv-list">
-        <div class="achv-item">UIUC Dean's List, 2024–2025</div>
-        <div class="achv-item">Grainger Engineering Achievement Scholarship</div>
-        <div class="achv-item">Wylder Scholarship</div>
-        <div class="achv-item">Legacy Scholarship</div>
+        <a class="achv-item" href="https://certifications.asana.com/a096eb82-b5e8-4fbf-91fc-734cee6740ec" target="_blank">
+          <img src="assets/cert-ambassador-badge.png" alt="Asana Ambassador certificate">
+        </a>
+        <a class="achv-item" href="https://certifications.asana.com/914cac31-2641-408d-a261-b03a1edc99d2" target="_blank">
+          <img src="assets/cert-workflow.jpg" alt="Asana Workflow Specialist certificate">
+        </a>
+        <a class="achv-item" href="https://certifications.asana.com/2c486209-a382-4cff-bcd8-9821e3ad9a51" target="_blank">
+          <img src="assets/cert-foundations-badge.png" alt="Asana Foundations Badge certificate">
+        </a>
+        <div class="achv-item achv-badge">
+          <img src="assets/Kickoff-Badge.png" alt="PMI Kickoff (Predictive) badge">
+        </div>
       </div>
     </div>
   </section>
 
   <section id="eng-contact">
-    <div class="wrap">
+    <div class="wrap reveal">
       <h2>Let's connect</h2>
       <div class="eng-links" style="justify-content:center;margin-top:24px;">
-        <a class="eng-btn solid" href="mailto:samanthapan06@gmail.com">Email samanthapan06@gmail.com</a>
+        <a class="eng-btn solid" href="mailto:samanthapan06@gmail.com">Email</a>
         <a class="eng-btn" href="https://www.linkedin.com/in/samanthap6" target="_blank">LinkedIn</a>
-        <a class="eng-btn" href="Samantha_Pan_Resume.pdf" target="_blank">Resume</a>
+        <a class="eng-btn" href="assets/resume.pdf" target="_blank">Resume</a>
       </div>
     </div>
   </section>
@@ -371,6 +411,9 @@
   <footer>Samantha Pan · Mechanical Engineering Portfolio</footer>
 </div>
 
+<div id="matcha-burst-layer" aria-hidden="true"></div>
+
+<script async src="https://www.tiktok.com/embed.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
