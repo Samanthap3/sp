@@ -1,4 +1,5 @@
-function setMode(mode){
+function setMode(mode, options){
+  options = options || {};
   const creator = document.getElementById('view-creator');
   const eng = document.getElementById('view-engineering');
   const cBtns = document.querySelectorAll('.mode-switch .creator-btn');
@@ -16,6 +17,25 @@ function setMode(mode){
     document.title = 'Samantha Pan — Engineering Portfolio';
   }
 
+  if(!options.skipHistory){
+    history.pushState({mode: mode}, '', mode === 'creator' ? 'creator' : '.');
+  }
+
+  if(options.instant){
+    hideEl.style.transition = 'none';
+    showEl.style.transition = 'none';
+    hideEl.style.display = 'none';
+    hideEl.style.opacity = '0';
+    showEl.style.display = '';
+    showEl.style.opacity = '1';
+    window.scrollTo({top:0, behavior:'instant'});
+    requestAnimationFrame(() => {
+      hideEl.style.transition = '';
+      showEl.style.transition = '';
+    });
+    return;
+  }
+
   hideEl.style.opacity = '0';
   setTimeout(() => {
     hideEl.style.display = 'none';
@@ -26,6 +46,28 @@ function setMode(mode){
       requestAnimationFrame(() => { showEl.style.opacity = '1'; });
     });
   }, 300);
+}
+
+function initRouting(){
+  const params = new URLSearchParams(location.search);
+  let initialMode = null;
+  if(params.get('view') === 'creator') initialMode = 'creator';
+  else if(params.get('view') === 'engineering') initialMode = 'engineering';
+  else if(/\/creator(\.html)?\/?$/.test(location.pathname)) initialMode = 'creator';
+  else if(/\/engineering(\.html)?\/?$/.test(location.pathname)) initialMode = 'engineering';
+
+  if(initialMode){
+    setMode(initialMode, {skipHistory:true, instant:true});
+    const cleanPath = initialMode === 'creator' ? 'creator' : '.';
+    history.replaceState({mode: initialMode}, '', cleanPath + location.hash);
+  } else {
+    history.replaceState({mode: 'engineering'}, '', location.href);
+  }
+
+  window.addEventListener('popstate', (e) => {
+    const mode = (e.state && e.state.mode) || (/\/creator(\.html)?\/?$/.test(location.pathname) ? 'creator' : 'engineering');
+    setMode(mode, {skipHistory:true, instant:true});
+  });
 }
 
 function initScrollReveal(){
@@ -120,6 +162,7 @@ function initMatchaClickEffect(){
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  initRouting();
   initScrollReveal();
   initNavHighlight();
   initMatchaClickEffect();
